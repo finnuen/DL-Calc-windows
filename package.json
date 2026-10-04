@@ -1,0 +1,12 @@
+{
+  "name": "dlcalc-win32-cpp",
+  "private": true,
+  "version": "1.3.1",
+  "scripts": {
+    "dev": "make serve #",
+    "build": "make build",
+    "start": "make serve #",
+    "lint": "make check",
+    "clean": "make clean"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Remix DL Calc 100% C++ windows",
+  "description": "Native Win32 C++17 standalone Windows executable (DLCalc.exe) with %APPDATA%\\DLCalc\\settings.ini persistence.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

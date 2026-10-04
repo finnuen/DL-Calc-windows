@@ -1,0 +1,5 @@
+*.obj
+*.o
+*.res
+build/
+.DS_Store
