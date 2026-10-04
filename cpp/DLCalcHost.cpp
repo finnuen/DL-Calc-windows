@@ -323,15 +323,17 @@ static std::string buildWin32PreviewDocument() {
   .tooltip {
     position: absolute;
     left: 76px;
-    top: 229px;
+    top: 225px;
     width: 292px;
-    height: 30px;
+    height: 38px;
     border-radius: 8px;
     background: #26262b;
     border: 1px solid #3f3f46;
-    font-size: 12.5px;
+    font-size: 12px;
+    line-height: 15px;
     font-weight: 600;
     display: none;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     z-index: 25;
@@ -443,7 +445,10 @@ static std::string buildWin32PreviewDocument() {
       </button>
 
       <!-- Info Tooltip -->
-      <div id="infoTooltip" class="tooltip">you can use + (plus) for multiple file size</div>
+      <div id="infoTooltip" class="tooltip">
+        <div>you can use + (plus) for multiple file size</div>
+        <div>values are stored in %appdata%</div>
+      </div>
 
       <!-- File Size (70, 265) -->
       <div class="unit-label" style="left:70px;top:265px;">File size:</div>
@@ -493,10 +498,10 @@ static std::string buildWin32PreviewDocument() {
   </div>
 
   <div class="toolbar">
-    <a class="dl-btn" href="/DLCalc.exe" download="DLCalc.exe">Download Standalone DLCalc.exe (Win32 PE32+)</a>
+    <a class="dl-btn" href="/DLCalc.exe" download="DLCalc.exe">Download Standalone DLCalc.exe v2.0 (Win32 PE32+)</a>
   </div>
   <div class="meta-bar">
-    Pure C++17 Win32 API + GDI+ &middot; Default Persistence: %APPDATA%\DLCalc\settings.ini &middot; Zero External Dependencies
+    DL Calc v2.0 &middot; Pure C++17 Win32 API + GDI+ &middot; Default Persistence: %APPDATA%\DLCalc\settings.ini
   </div>
 
 <script>

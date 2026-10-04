@@ -820,7 +820,7 @@ static void paintMainWindow(HWND hwnd, HDC hdc) {
 
     // 6. Info Tooltip Popup (if active)
     if (g_app.showInfoTooltip) {
-        RECT rcTip = {76, 229, 368, 259};
+        RECT rcTip = {76, 225, 368, 263};
         Gdiplus::GraphicsPath tipPath;
         addRoundedRectPath(tipPath, (Gdiplus::REAL)rcTip.left, (Gdiplus::REAL)rcTip.top,
                            (Gdiplus::REAL)(rcTip.right - rcTip.left), (Gdiplus::REAL)(rcTip.bottom - rcTip.top), 8.0f);
@@ -831,7 +831,10 @@ static void paintMainWindow(HWND hwnd, HDC hdc) {
 
         SelectObject(memDC, g_app.hFontSmall);
         SetTextColor(memDC, textRef);
-        DrawTextW(memDC, L"you can use + (plus) for multiple file size", -1, &rcTip, DT_CENTER | DT_VCENTER | DT_SINGLELINE);
+        RECT rcRow1 = {rcTip.left, rcTip.top + 2, rcTip.right, rcTip.top + 19};
+        RECT rcRow2 = {rcTip.left, rcTip.top + 19, rcTip.right, rcTip.bottom - 2};
+        DrawTextW(memDC, L"you can use + (plus) for multiple file size", -1, &rcRow1, DT_CENTER | DT_VCENTER | DT_SINGLELINE);
+        DrawTextW(memDC, L"values are stored in %appdata%", -1, &rcRow2, DT_CENTER | DT_VCENTER | DT_SINGLELINE);
     }
 
     // 7. Custom Themed Dropdown Popup (if open)
