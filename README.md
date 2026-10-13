@@ -4,7 +4,7 @@ simply download `DLCalc.exe` in releases and run it
 
 previous session persist in %appdata%\DLCalc
 
-time can be copied and can do triangle calculation
+time can be copied, can do triangle calculation, can calculate multiple file size like part1, part2
 
 
 <img width="400" height="515" alt="2026-10-05_06-33-37" src="https://github.com/user-attachments/assets/ed3ef123-76f7-4bb2-a9f8-5958461148f7" />
