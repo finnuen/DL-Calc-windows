@@ -1,3 +1,7 @@
+Direct download latest
+
+Windows 10/11  :  https://github.com/finnuen/DL-Calc-windows/releases/latest/download/DLCalc.exe
+
 standalone app with zero dependencies
 
 simply download `DLCalc.exe` in releases and run it
